@@ -163,8 +163,6 @@ if df_filtered['P3072'].sum() > 0:
 else:
     st.info("No hay datos válidos para mostrar la distribución de Ingreso Promedio Mensual con los filtros actuales.")
 
----
-
 # --- Plot 2: Composición de Ingresos por Tipo de Venta/Servicio ---
 st.subheader("2. Composición de Ingresos por Tipo de Venta/Servicio")
 # Sum of weighted income types
@@ -197,7 +195,6 @@ if total_income_weighted_overall > 0:
 else:
     st.info("No hay datos de ingresos válidos para mostrar la composición por tipo de venta con los filtros actuales.")
 
----
 
 # --- Plot 3: Ingreso Promedio Mensual por Área Metropolitana ---
 st.subheader("3. Ingreso Promedio Mensual por Área Metropolitana (AREA_Label)")
@@ -220,5 +217,4 @@ if not df_income_by_area.empty and df_income_by_area['P3072'].sum() > 0:
 else:
     st.info("No hay datos para mostrar el ingreso promedio por área metropolitana con los filtros actuales.")
 
----
 st.success("¡Dashboard del Módulo de Ventas e Ingresos generado exitosamente con TUS datos reales y columnas seleccionadas!")
